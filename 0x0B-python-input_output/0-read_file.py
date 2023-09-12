@@ -1,11 +1,16 @@
 #!/usr/bin/python3
-"""
-This module contains one function
-"""
+'''Defines a function called read_file
+'''
 
 
 def read_file(filename=""):
-    """ reads a text file and prints its content """
+    '''Reads a file and prints it out
+
+    Args:
+       filename (dir): The path to the file being read
+
+    Return: none
+    '''
     with open(filename) as f:
         for line in f:
             print(line, end="")
